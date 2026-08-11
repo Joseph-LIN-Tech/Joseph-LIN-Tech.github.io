@@ -243,15 +243,6 @@ u {
   font-size: 1.12rem;
 }
 
-.hero-kicker {
-  margin-bottom: 0.45rem;
-  color: var(--accent);
-  font-size: 0.83rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .intro-lead {
   color: var(--text);
   font-size: 1.08rem;
