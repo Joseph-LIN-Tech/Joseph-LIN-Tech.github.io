@@ -35,10 +35,10 @@
         <ul class="profile-details">
           <li>Tokyo, Japan</li>
           <li>
-            <button class="contact-link reveal-email" type="button" aria-label="Reveal email address">
+            <a class="contact-link reveal-email" href="#" aria-label="Reveal email address">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>
-              <span>Email (click to reveal)</span>
-            </button>
+              <span>Email</span>
+            </a>
           </li>
           <li>
             <a class="contact-link" href="https://scholar.google.com/citations?user=rOZjjHcAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">
@@ -105,7 +105,7 @@
             <div class="publication-media">
               <figure class="paper-figure">
                 <span class="publication-badge">2026</span>
-                <img src="images/papers/world-renderer.png" alt="Generative World Renderer paper teaser">
+                <img src="images/papers/world-renderer.png?v=20260811" alt="Generative World Renderer paper teaser">
               </figure>
             </div>
             <div class="publication-content">
@@ -123,7 +123,7 @@
             <div class="publication-media">
               <figure class="paper-figure">
                 <span class="publication-badge">TPAMI 2026</span>
-                <img src="images/papers/moment-reenacting.png" alt="Moment-Reenacting paper teaser">
+                <img src="images/papers/moment-reenacting.png?v=20260811" alt="Moment-Reenacting paper teaser">
               </figure>
             </div>
             <div class="publication-content">
@@ -141,7 +141,7 @@
             <div class="publication-media">
               <figure class="paper-figure">
                 <span class="publication-badge">ICLR 2025</span>
-                <img src="images/papers/rninet.png" alt="RNINet paper teaser">
+                <img src="images/papers/rninet.png?v=20260811" alt="RNINet paper teaser">
               </figure>
             </div>
             <div class="publication-content">
@@ -158,7 +158,7 @@
             <div class="publication-media">
               <figure class="paper-figure">
                 <span class="publication-badge">AAAI 2025</span>
-                <img src="images/papers/event-attack.png" alt="Event attack paper teaser">
+                <img src="images/papers/event-attack.png?v=20260811" alt="Event attack paper teaser">
               </figure>
             </div>
             <div class="publication-content">
@@ -175,7 +175,7 @@
             <div class="publication-media">
               <figure class="paper-figure">
                 <span class="publication-badge">ACM MM 2024</span>
-                <img src="images/papers/flexir.png" alt="FlexIR paper teaser">
+                <img src="images/papers/flexir.png?v=20260811" alt="FlexIR paper teaser">
               </figure>
             </div>
             <div class="publication-content">
@@ -189,7 +189,7 @@
             <div class="publication-media">
               <figure class="paper-figure">
                 <span class="publication-badge">ACM MM 2024</span>
-                <img src="images/papers/data-efficiency.png" alt="Data Efficiency paper teaser">
+                <img src="images/papers/data-efficiency.png?v=20260811" alt="Data Efficiency paper teaser">
               </figure>
             </div>
             <div class="publication-content">
@@ -203,7 +203,7 @@
             <div class="publication-media">
               <figure class="paper-figure">
                 <span class="publication-badge">ACM MM 2023</span>
-                <img src="images/papers/event-guided.png" alt="Event-guided frame interpolation paper teaser">
+                <img src="images/papers/event-guided.png?v=20260811" alt="Event-guided frame interpolation paper teaser">
               </figure>
             </div>
             <div class="publication-content">
@@ -255,7 +255,8 @@
   <script>
     const emailButton = document.querySelector('.reveal-email');
 
-    emailButton.addEventListener('click', () => {
+    emailButton.addEventListener('click', (event) => {
+      event.preventDefault();
       const mailbox = ['joseph', 'lin', 'job'].join('.');
       const host = ['gmail', 'com'].join('.');
       const address = `${mailbox}@${host}`;
