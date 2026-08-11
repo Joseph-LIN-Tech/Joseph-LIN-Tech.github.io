@@ -35,10 +35,10 @@
         <ul class="profile-details">
           <li>Tokyo, Japan</li>
           <li>
-            <a class="contact-link" href="https://mail.google.com/mail/?view=cm&fs=1&to=joseph.lin.job@gmail.com" target="_blank" rel="noopener noreferrer">
+            <button class="contact-link reveal-email" type="button" aria-label="Reveal email address">
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4z"></path><path d="m4 7 8 6 8-6"></path></svg>
-              <span>joseph.lin.job@gmail.com</span>
-            </a>
+              <span>Email (click to reveal)</span>
+            </button>
           </li>
           <li>
             <a class="contact-link" href="https://scholar.google.com/citations?user=rOZjjHcAAAAJ&hl=zh-CN" target="_blank" rel="noopener noreferrer">
@@ -252,5 +252,22 @@
       </section>
     </main>
   </div>
+  <script>
+    const emailButton = document.querySelector('.reveal-email');
+
+    emailButton.addEventListener('click', () => {
+      const mailbox = ['joseph', 'lin', 'job'].join('.');
+      const host = ['gmail', 'com'].join('.');
+      const address = `${mailbox}@${host}`;
+      const emailLink = document.createElement('a');
+
+      emailLink.className = 'contact-link';
+      emailLink.href = `mailto:${address}`;
+      emailLink.setAttribute('aria-label', `Email ${address}`);
+      emailLink.innerHTML = emailButton.innerHTML;
+      emailLink.querySelector('span').textContent = address;
+      emailButton.replaceWith(emailLink);
+    }, { once: true });
+  </script>
 </body>
 </html>

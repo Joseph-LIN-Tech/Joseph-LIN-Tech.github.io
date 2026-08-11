@@ -180,10 +180,24 @@ u {
   color: var(--muted);
 }
 
-.profile-details a {
+.profile-details a,
+.profile-details button {
   display: inline-flex;
   align-items: center;
   gap: 0.45rem;
+}
+
+.profile-details button {
+  padding: 0;
+  border: 0;
+  color: var(--link);
+  background: none;
+  font: inherit;
+  cursor: pointer;
+}
+
+.profile-details button:hover {
+  text-decoration: underline;
 }
 
 .contact-link svg {
