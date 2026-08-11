@@ -141,13 +141,13 @@ u {
 
 .avatar-link {
   display: block;
-  width: 176px;
+  width: 156px;
   margin-bottom: 0.85rem;
 }
 
 .avatar-link img {
-  width: 176px;
-  height: 176px;
+  width: 156px;
+  height: 156px;
   object-fit: cover;
   border-radius: 50%;
   border: 4px solid var(--surface);
