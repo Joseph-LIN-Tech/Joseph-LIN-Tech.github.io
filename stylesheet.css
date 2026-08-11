@@ -142,7 +142,7 @@ u {
 .avatar-link {
   display: block;
   width: 176px;
-  margin-bottom: 1.1rem;
+  margin-bottom: 0.85rem;
 }
 
 .avatar-link img {
@@ -163,10 +163,8 @@ u {
 
 .role {
   color: var(--muted);
-}
-
-.role {
-  margin-bottom: 1rem;
+  line-height: 1.42;
+  margin: 0 0 0.65rem;
 }
 
 .profile-details {
@@ -176,7 +174,7 @@ u {
 }
 
 .profile-details li {
-  margin: 0 0 0.45rem;
+  margin: 0 0 0.35rem;
   color: var(--muted);
 }
 
