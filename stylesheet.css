@@ -319,6 +319,11 @@ u {
   object-fit: cover;
 }
 
+.paper-figure img.publication-teaser-wide {
+  object-fit: contain;
+  background: #14191c;
+}
+
 .publication-card:hover .paper-figure {
   transform: translateY(-3px);
   box-shadow: 0 18px 34px rgba(33, 47, 61, 0.17);
