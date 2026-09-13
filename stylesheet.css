@@ -320,8 +320,9 @@ u {
 }
 
 .paper-figure img.publication-teaser-wide {
-  object-fit: contain;
-  background: #14191c;
+  aspect-ratio: auto;
+  display: block;
+  object-fit: initial;
 }
 
 .publication-card:hover .paper-figure {
